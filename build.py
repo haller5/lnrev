@@ -46,6 +46,14 @@ def jp_sub_html(text):
     return f'<p class="jp-sub">{text}</p>'
 
 
+def thoughts_html(thoughts):
+    """Accepts either a list of paragraphs (preferred) or a single
+    string (for backwards compatibility) and renders one <p> per item."""
+    if isinstance(thoughts, str):
+        thoughts = [thoughts] if thoughts else []
+    return "".join(f"<p>{p}</p>" for p in thoughts)
+
+
 def _resolved_url(path, prefix):
     """Returns prefix+path if path is set and the file exists on disk,
     otherwise None. Every image-driving helper below goes through this
@@ -153,7 +161,7 @@ def render_article_body(entry, site, image_prefix, link_prefix, css_class, eyebr
             {review_notes_html(entry.get('review_notes'))}
             <p>{entry['para1']}</p>
             <h4>Thoughts</h4>
-            <p>{entry['thoughts']}</p>
+            {thoughts_html(entry['thoughts'])}
             <p class="rating">final rating: {entry['rating']}</p>
             <div class="like-lists">
               <p>what I like</p>
