@@ -416,6 +416,7 @@ summary.shelf-row:focus-visible {
 
 @media (max-width: 760px) {
   .layout { grid-template-columns: 1fr; }
+  .layout.article-layout { grid-template-columns: 1fr; padding-top: 32px; }
   .post-body { grid-template-columns: 1fr; }
   .byline { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
   .byline .avatar { margin-bottom: 0; }
@@ -424,3 +425,4 @@ summary.shelf-row:focus-visible {
   .featured { padding: 22px 20px; }
   .featured .topline { flex-wrap: wrap; gap: 6px; }
 }
+
