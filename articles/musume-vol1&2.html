@@ -3,28 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Untitled</title>
+<title>娘じゃなくて私が好きなの！？ — Untitled</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
   <header class="site-header">
-    <h1><a href="index.html">UNTITLED</a></h1>
+    <h1><a href="../index.html">UNTITLED</a></h1>
     <p class="tagline">japanese (immersion) light novels / anime / typically, at least</p>
     <nav>
-      <a href="index.html" class="active">[HOME]</a>
+      <a href="../index.html">[HOME]</a>
       <a href="#">[ABOUT]</a>
     </nav>
   </header>
 
-  <div class="banner" style="background-image:url('banner.jpg');"></div>
-
-  <div class="layout">
+  <div class="layout article-layout">
     <div class="main-col">
+      <a class="back-link" href="../index.html">← back to the shelf</a>
 
-      <article class="featured">
+      <article class="post">
         <div class="topline">
           <span>currently reading / vol. 1&2 (May-? 2026)</span>
           <span class="tag">[LN]</span>
@@ -32,10 +31,10 @@
         <h2>娘じゃなくて私が好きなの！？</h2>
         <p class="jp-sub">...</p>
         <p class="quote">incomplete.</p>
-        <div class="cover" data-type="ln" style="background-image:url('images/musumeart1.webp'); background-size:cover; background-position:center;"></div>
+        <div class="cover" data-type="ln" style="background-image:url('../images/musumeart1.webp'); background-size:cover; background-position:center;"></div>
         <div class="post-body">
           <div class="byline" data-type="ln">
-            <div class="avatar" style="background-image:url('avatar.jpg');"></div>
+            <div class="avatar" style="background-image:url('../avatar.jpg');"></div>
             <p class="author">you</p>
             <p class="date">still reading</p>
             <span class="tag">[LN]</span>
@@ -53,28 +52,9 @@
               <p>what I don't like</p>
               <ul><li>nurp</li></ul>
             </div>
-            <a class="read-more" href="articles/musume-vol1&2.html">read more</a>
           </div>
         </div>
       </article>
-
-      <p class="shelf-label">the shelf</p>
-      <div class="shelf-wrap">
-        <div class="shelf-index" id="shelf-index">
-
-        </div>
-        <div class="shelf-preview">
-          <div class="preview-stack" id="preview-stack">
-            <div class="pcard p3"></div>
-            <div class="pcard p2"></div>
-            <div class="pcard p1"></div>
-          </div>
-          <p class="preview-title" id="preview-title"></p>
-          <p class="preview-meta" id="preview-meta"></p>
-          <p class="hint" id="preview-hint">hover a title</p>
-        </div>
-      </div>
-
     </div>
 
     <aside class="sidebar">
@@ -93,10 +73,10 @@
       <div class="widget">
         <h3>Categories</h3>
         <ul>
-          <li><a href="#">[LIGHT NOVEL]</a></li>
-          <li><a href="#">[ANIME]</a></li>
-          <li><a href="#">[BOOK]</a></li>
-          <li><a href="#">[REVIEW]</a></li>
+          <li><a href="../index.html">[LIGHT NOVEL]</a></li>
+          <li><a href="../index.html">[ANIME]</a></li>
+          <li><a href="../index.html">[BOOK]</a></li>
+          <li><a href="../index.html">[REVIEW]</a></li>
         </ul>
       </div>
     </aside>
@@ -104,6 +84,5 @@
 
   <footer class="site-footer">generally reviewing stuff I read/watch in Japanese.</footer>
 
-<script src="script.js"></script>
 </body>
 </html>
