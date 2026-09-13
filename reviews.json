@@ -25,8 +25,8 @@
       "jp_sub": "...",
       "meta": "vol. 1&2 (May-? 2026)",
       "date": "still reading",
-      "article_cover": "musumeart1.webp",
-      "stack_covers": ["musume1.webp", "musume2.webp", "musume3.png"],
+      "article_cover": "images/musumeart1.webp",
+      "stack_covers": ["images/musume1.webp", "images/musume2.webp", "images/musume3.png"],
       "quote": "incomplete.",
       "review_notes": [
         "required reading — vols. 1–2",
@@ -43,6 +43,6 @@
       "dislike": [
         "nurp"
       ]
-    },
+    }
   ]
 }
