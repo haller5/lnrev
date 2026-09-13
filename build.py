@@ -76,23 +76,28 @@ def bg_image_attr(path, prefix, extra_css=""):
 
 
 def cover_attr(entry, image_prefix):
+    """Full-size cover for the article page, driven by article_cover."""
     return bg_image_attr(
-        entry.get("cover"), image_prefix,
+        entry.get("article_cover"), image_prefix,
         " background-size:cover; background-position:center;"
     )
 
 
-def stack_card_style(entry, image_prefix):
-    """Same helper as cover_attr, used for the three thumb-stack /
-    preview-stack cards — same cover image on all three."""
-    return cover_attr(entry, image_prefix)
+def resolved_stack_covers(entry, image_prefix):
+    """Returns exactly 3 entries (front, middle, back) from stack_covers,
+    each either a resolved URL string or "" if blank/missing on disk."""
+    covers = (entry.get("stack_covers") or [])[:3]
+    covers = covers + [""] * (3 - len(covers))
+    return [_resolved_url(c, image_prefix) or "" for c in covers]
 
 
-def cover_url_or_empty(entry, image_prefix):
-    """Resolved cover URL (or '') for the data-cover attribute that
-    script.js reads to fill the hover-preview pane."""
-    return _resolved_url(entry.get("cover"), image_prefix) or ""
-
+def stack_card_style_for(url):
+    if not url:
+        return ""
+    return (
+        f" style=\"background-image:url('{url}'); "
+        "background-size:cover; background-position:center;\""
+    )
 
 def render_avatar(site, image_prefix):
     attr = bg_image_attr(site.get("avatar"), image_prefix)
@@ -176,14 +181,14 @@ def render_article_body(entry, site, image_prefix, link_prefix, css_class, eyebr
 
 def render_shelf_row(entry, image_prefix):
     t = TYPE_LABELS[entry["type"]]
-    card_style = stack_card_style(entry, image_prefix)
-    data_cover = cover_url_or_empty(entry, image_prefix)
+    c1, c2, c3 = resolved_stack_covers(entry, image_prefix)
     return f"""      <details class="shelf-row-wrap">
-        <summary class="shelf-row" data-type="{entry['type']}" data-cover="{data_cover}">
+        <summary class="shelf-row" data-type="{entry['type']}"
+          data-cover-1="{c1}" data-cover-2="{c2}" data-cover-3="{c3}">
           <div class="thumb-stack" data-type="{entry['type']}">
-            <div class="tcard t3"{card_style}></div>
-            <div class="tcard t2"{card_style}></div>
-            <div class="tcard t1"{card_style}></div>
+            <div class="tcard t3"{stack_card_style_for(c3)}></div>
+            <div class="tcard t2"{stack_card_style_for(c2)}></div>
+            <div class="tcard t1"{stack_card_style_for(c1)}></div>
           </div>
           <span class="title">{entry['title']}</span>
           <span class="dots"></span>
