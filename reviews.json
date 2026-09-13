@@ -1,202 +1,47 @@
 {
   "site": {
     "title": "Untitled",
-    "tagline": "light novels / anime / english books — loved, not lectured on",
+    "tagline": "japanese (immersion) light novels / anime / typically, at least",
     "author": "you",
     "banner": "banner.jpg",
     "avatar": "avatar.jpg",
-    "footer": "UNTITLED — a personal log, updated whenever there's something worth writing down."
+    "footer": "generally reviewing stuff I read/watch in Japanese."
   },
   "reading_list": {
     "upcoming": [
-      "本好きの下剋上 — vol. 5"
+      "娘じゃなくてママが好きなの！？ Vol. 2"
     ],
     "future": [
-      "ノーゲーム・ノーライフ — vol. 3",
-      "Whatever's next on the pile"
+      "Finishing the above series",
+      "Some anime soon, のんのんびより?"
     ]
   },
   "reviews": [
     {
-      "slug": "musume-vol3",
+      "slug": "musume-vol1&2",
       "featured": true,
       "type": "ln",
-      "title": "娘じゃなくて私が好きなの",
-      "jp_sub": "It's Not My Daughter You Like, It's Me",
-      "meta": "vol. 3",
-      "date": "sept 2026",
-      "cover": "",
-      "quote": "Kept turning pages faster than I could actually parse them, which is its own kind of compliment.",
+      "title": "娘じゃなくて私が好きなの！？",
+      "jp_sub": "...",
+      "meta": "vol. 1&2 (May-? 2026)",
+      "date": "still reading",
+      "cover": "musume1.png",
+      "quote": "incomplete.",
       "review_notes": [
         "required reading — vols. 1–2",
-        "spoilers — mild"
+        "spoilers — yes"
       ],
-      "para1": "Volume 3 slows down a little from the first two, but I didn't mind — it gave me time to actually catch grammar patterns instead of just chasing plot.",
+      "para1": "incomplete.",
       "thoughts": [
-        "There's a scene about two-thirds in I reread three times, not because the Japanese was hard, but because I didn't want it to be over yet.",
-        "Not going to pretend I have some grand read on what the series is \"about.\" I just like these people and I like spending time in this house."
+        "incomplete."
       ],
-      "rating": "4.5/5",
+      "rating": "のん/5",
       "like": [
-        "the pacing of this volume",
-        "comfortable reading level"
+        "nurp"
       ],
       "dislike": [
-        "wanted a bit more of the side cast"
+        "nurp"
       ]
     },
-    {
-      "slug": "slime-vol1",
-      "featured": false,
-      "type": "ln",
-      "title": "転生したらスライムだった件",
-      "jp_sub": "That Time I Got Reincarnated as a Slime",
-      "meta": "vol. 1",
-      "date": "aug 2026",
-      "cover": "",
-      "quote": "Easier than I expected, in a good way — this is what \"reading for fun\" is supposed to feel like.",
-      "review_notes": [
-        "required reading — none"
-      ],
-      "para1": "Picked this up as a palate cleanser between denser stuff and ended up preferring the pacing.",
-      "thoughts": [
-        "Vocabulary repeats a lot across chapters, which meant less dictionary-diving and more actual reading — it's the first thing I've read where I felt like I was gaining speed in real time rather than just accumulating unknown words."
-      ],
-      "rating": "4/5",
-      "like": [
-        "repetitive vocabulary made it an easy read",
-        "fun, low-stakes tone"
-      ],
-      "dislike": [
-        "nothing major"
-      ]
-    },
-    {
-      "slug": "lookback",
-      "featured": false,
-      "type": "anime",
-      "title": "Look Back",
-      "jp_sub": "",
-      "meta": "watched raw",
-      "date": "aug 2026",
-      "cover": "",
-      "quote": "Understood maybe 85% without subs and cried at 100% of it anyway.",
-      "review_notes": [
-        "watched raw, no subtitles"
-      ],
-      "para1": "First thing I watched where I stopped noticing I wasn't reading subtitles about halfway through — a small milestone I wasn't expecting this soon.",
-      "thoughts": [
-        "The ending got me regardless of language. There's a difference between following dialogue and actually feeling the rhythm of how people talk to each other, and this was the first time it felt like the second one."
-      ],
-      "rating": "5/5",
-      "like": [
-        "understood ~85% without subs",
-        "the ending, obviously"
-      ],
-      "dislike": [
-        "wish it were longer"
-      ]
-    },
-    {
-      "slug": "nogame-vol2",
-      "featured": false,
-      "type": "ln",
-      "title": "ノーゲーム・ノーライフ",
-      "jp_sub": "No Game No Life",
-      "meta": "vol. 2",
-      "date": "june 2026",
-      "cover": "",
-      "quote": "Dense with wordplay and it kicked my ass a little, in the fun way.",
-      "review_notes": [
-        "spoilers — mild"
-      ],
-      "para1": "Had to slow way down for this one — a lot of the humor is built on puns that only land once you actually parse the sentence structure.",
-      "thoughts": [
-        "Worth the extra time, though. It's the first volume that made me feel like I was reading for the language itself as much as the story, which I didn't expect going in."
-      ],
-      "rating": "4/5",
-      "like": [
-        "wordplay, once I could actually catch it"
-      ],
-      "dislike": [
-        "slower reading pace than I'd like"
-      ]
-    },
-    {
-      "slug": "kiminonawa",
-      "featured": false,
-      "type": "anime",
-      "title": "君の名は。",
-      "jp_sub": "Kimi no Na wa",
-      "meta": "rewatch, no subs",
-      "date": "july 2026",
-      "cover": "",
-      "quote": "Knew the plot already, so pure listening practice, and it held up completely.",
-      "review_notes": [
-        "rewatch — first watched with subtitles years ago"
-      ],
-      "para1": "Rewatching something I already know well raw is a nice trick — no anxiety about missing plot, just soaking in how lines actually sound.",
-      "thoughts": [
-        "Still holds up on a rewatch, which isn't always guaranteed once you already know exactly what happens next."
-      ],
-      "rating": "5/5",
-      "like": [
-        "great for listening practice",
-        "still holds up on rewatch"
-      ],
-      "dislike": [
-        "none"
-      ]
-    },
-    {
-      "slug": "honzuki-vol4",
-      "featured": false,
-      "type": "ln",
-      "title": "本好きの下剋上",
-      "jp_sub": "Ascendance of a Bookworm",
-      "meta": "vol. 4",
-      "date": "may 2026",
-      "cover": "",
-      "quote": "A protagonist who's also obsessed with reading, which made this an easy sell.",
-      "review_notes": [
-        "required reading — vols. 1–3",
-        "spoilers — mild"
-      ],
-      "para1": "The world-building leans heavier than most of what I read, but the core premise — someone willing to do anything for books — kept me engaged through denser passages.",
-      "thoughts": [
-        "This is the series I reach for when I want the reading itself to feel a little more like work in a good way — slower going, but it pays off."
-      ],
-      "rating": "4/5",
-      "like": [
-        "a protagonist who loves books as much as I do",
-        "worldbuilding depth"
-      ],
-      "dislike": [
-        "denser passages slow the pace"
-      ]
-    },
-    {
-      "slug": "placeholder-book",
-      "featured": false,
-      "type": "book",
-      "title": "Placeholder — real favorite goes here",
-      "jp_sub": "",
-      "meta": "english novel",
-      "date": "july 2026",
-      "cover": "",
-      "quote": "Still good. Still not writing a thesis about why.",
-      "review_notes": [],
-      "para1": "Left this one blank on purpose — didn't want to put words in your mouth for a book you actually care about.",
-      "thoughts": [
-        "Swap this whole entry for something you reread recently. One honest paragraph on why it still works for you is plenty — no need to build a case for it."
-      ],
-      "rating": "—/5",
-      "like": [
-        "(your call)"
-      ],
-      "dislike": [
-        "(your call)"
-      ]
-    }
   ]
 }
